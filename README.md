@@ -1,4 +1,4 @@
-# Youtube Channel Statistics
+# Youtube Channel API
 <table>
 <tr>
 <td>
