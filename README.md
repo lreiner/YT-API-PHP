@@ -21,7 +21,7 @@ http://<server-ip-or-address>/get_channel_statistics.php?id=UC-lHJZR3Gqxm24_Vd_A
 
 Example Output in JSON:
 ```
-[{"channelID":"UC-lHJZR3Gqxm24_Vd_AJ5Yw","viewCount":"21082625429","subscriberCount":"93689562"}]
+[{"channelID":"UC-lHJZR3Gqxm24_Vd_AJ5Yw","viewCount":"21082625429","subscriberCount":"93689562","latestVideoID":"bRG6sy3VaWU"}]
 ```
 
 ## Donation [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/LukasReiner/) 
