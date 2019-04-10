@@ -29,6 +29,25 @@ Example Output in JSON:
 }]
 ```
 
+## Example Functions
+
+#### getChannelStatistics 
+```
+// @param channelid -> Youtube Channel ID
+// @param counttype -> Either "viewcount" or "subcount"
+// @return count -> view or subcount as number
+
+YTChannel::getChannelStatistics(<channelid>, <counttype>)
+```
+
+#### getLatestVideo 
+```
+// @param channelid -> Youtube Channel ID
+// @return videoID -> Video ID of latest YT Video
+
+YTChannel::getLatestVideo(<channelid>)
+```
+
 ## Donation [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/LukasReiner/) 
 If this project help you reduce time to develop, you can give me a cup of coffee (or a Beer of course) :)
 
