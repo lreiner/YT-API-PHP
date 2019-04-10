@@ -11,7 +11,7 @@ PHP script to gain channel statistics in live time.  An alternative to the Youtu
 <table>
 <tr>
 <td>
-This application is for private or educational purposes only. You should use the official [Youtube Data API](https://developers.google.com/youtube/v3/).
+This application is for private or educational purposes only. You should use the official Youtube Data API: https://developers.google.com/youtube/v3/.
 We do not accept responsibility for banned accounts or penalties of any kind caused by the use of this script. We would like to point out that using this script violates the Terms and Conditions. By using the script, you automatically accept that you yourself are criminally responsible for yourself and you are aware that it violates the guidelines.
 </td>
 </tr>
