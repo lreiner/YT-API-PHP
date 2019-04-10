@@ -7,8 +7,9 @@
         $response = array();
         $response[0] = array(
             'channelID' => $_GET["id"],
-            'viewCount'=> YTChannel::getChannelData($_GET["id"], "viewcount"),
-            'subscriberCount'=> YTChannel::getChannelData($_GET["id"], "subcount")
+            'viewCount' => YTChannel::getChannelStatistics($_GET["id"], "viewcount"),
+            'subscriberCount' => YTChannel::getChannelStatistics($_GET["id"], "subcount"),
+            'latestVideoID' => YTChannel::getLatestVideo($_GET["id"])
         );
     
         echo json_encode($response); 

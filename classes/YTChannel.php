@@ -14,7 +14,9 @@
          * @param channelID -> official Channel Page ID
          * @param type -> type like subcount, viewcount 
          */
-        public static function getChannelData($cID, $type) {
+        public static function getChannelStatistics($cID, $type) {
+            $statistic = NULL;
+
             if($type == "subcount") {
                 $url = 'https://www.youtube.com/channel/' . $cID;
                 $page = file_get_contents($url);
@@ -31,6 +33,23 @@
             }
 
             return $statistic;
+        }
+
+
+        /**
+         * Get Latest Channel Video ID
+         * @param cid -> channel Id to get latest video
+         */
+        public static function getLatestVideo($cID) {
+            $id = NULL;
+
+            $xml = simplexml_load_file(sprintf('https://www.youtube.com/feeds/videos.xml?channel_id=%s', $cID));
+
+            if (!empty($xml->entry[0]->children('yt', true)->videoId[0])){
+                $id = (string) $xml->entry[0]->children('yt', true)->videoId[0];
+            }
+
+            return $id;
         }
     }
 ?>
