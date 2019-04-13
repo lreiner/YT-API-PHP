@@ -1,4 +1,4 @@
-# Youtube Channel API
+# Youtube Channel API for PHP
 <table>
 <tr>
 <td>
