@@ -1,4 +1,4 @@
-# Youtube Channel API (No Live Updates)
+# Youtube Channel API
 <table>
 <tr>
 <td>
