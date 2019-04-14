@@ -20,12 +20,12 @@ We do not accept responsibility for banned accounts or penalties of any kind cau
 ## How does it work?
 
 Just put the files on your Http Server and call the script like this:
-```
+```php
 http://<server-ip-or-address>/get_channel_statistics.php?id=UC-lHJZR3Gqxm24_Vd_AJ5Yw
 ```
 
 Example Output in JSON:
-```
+```json
 [{
   "channelID":"UC-lHJZR3Gqxm24_Vd_AJ5Yw",
   "viewCount":"21082625429",
@@ -37,7 +37,7 @@ Example Output in JSON:
 ## Example Functions
 
 #### getChannelStatistics 
-```
+```php
 // @param channelid -> Youtube Channel ID
 // @param counttype -> Either "viewcount" or "subcount"
 // @return count -> view or subcount as number
@@ -46,7 +46,7 @@ YTChannel::getChannelStatistics(<channelid>, <counttype>)
 ```
 
 #### getLatestVideo 
-```
+```php
 // @param channelid -> Youtube Channel ID
 // @return videoID -> Video ID of latest YT Video
 
